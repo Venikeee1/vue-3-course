@@ -1,5 +1,12 @@
 # Vue micro cousre
 
+## Сторінки
+- Intro
+- Map
+- Marker details
+- Login
+- Register
+
 ## Установка
 The recommended IDE setup is VSCode + the Vue Language Features (Volar) extension. The extension provides syntax highlighting, TypeScript support, and intellisense for template expressions and component props.
 
