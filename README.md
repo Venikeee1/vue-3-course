@@ -88,18 +88,17 @@ The recommended IDE setup is VSCode + the Vue Language Features (Volar) extensio
 - Named Slots
 - Scoped Slots​
 
-## Browser Devtools
-
-- Підключаємо VUE devtools
-- Основні можливості девтулзів
-
 ## Routing
 
 - Базове налаштування роутингу
 - дочірні роути
 - Lazy routes
+- описуємо наші основні роути
 
-* описуємо наші основні роути
+## Browser Devtools
+
+- Підключаємо VUE devtools
+- Основні можливості девтулзів
 
 ## Provide / inject
 
