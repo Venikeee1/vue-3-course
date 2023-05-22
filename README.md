@@ -75,6 +75,11 @@ The recommended IDE setup is VSCode + the Vue Language Features (Volar) extensio
 
 - опис основних хуків
 
+## Composables
+
+- Вдімінність Composables від React hooks
+- Пишемо свій композабл на основі запиту на сервер
+
 ## slots
 
 - Базовий слот
@@ -102,11 +107,6 @@ The recommended IDE setup is VSCode + the Vue Language Features (Volar) extensio
 - Provide
 - Inject
 - Як працювати з реактивністю в Provide / inject
-
-## Composables
-
-- Вдімінність Composables від React hooks
-- Пишемо свій композабл на основі запиту на сервер
 
 ## Piniya
 
