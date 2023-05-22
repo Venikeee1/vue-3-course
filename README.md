@@ -25,8 +25,8 @@ The recommended IDE setup is VSCode + the Vue Language Features (Volar) extensio
 ## Структура компонента
 
 - що таке SFC
-- <template />
-- <script />
+- Тег template
+- Тег script
 
 ## Основні маніпуляції з шаблоном
 
