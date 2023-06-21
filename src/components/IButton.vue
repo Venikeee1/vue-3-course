@@ -1,5 +1,5 @@
 <template>
-  <button class="btn">Click me</button>
+  <button class="btn">Почати роботу</button>
 </template>
 
 <style>
@@ -13,5 +13,6 @@
   line-height: 1.1;
   color: #fff;
   cursor: pointer;
+  font-weight: 500;
 }
 </style>
