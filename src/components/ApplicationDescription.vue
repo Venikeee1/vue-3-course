@@ -39,6 +39,7 @@ import IButton from './IButton.vue';
 }
 
 .title {
+  text-align: center;
   font-size: 38px;
   font-weight: 700;
   color: #fff;
