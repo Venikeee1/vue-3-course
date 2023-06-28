@@ -12,7 +12,8 @@ import IButton from './IButton.vue';
         улюблені місця, а також ті, в яких би ти дуже хотів побувати. Тож не
         зволікай і спробуй сам.
       </p>
-      <IButton />
+      <!-- <IButton /> -->
+      <IButton>Почати роботу</IButton>
     </div>
   </section>
 </template>

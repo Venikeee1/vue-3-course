@@ -1,5 +1,9 @@
+<script setup></script>
+
 <template>
-  <button class="btn">Почати роботу</button>
+  <button class="btn">
+    <slot></slot>
+  </button>
 </template>
 
 <style>

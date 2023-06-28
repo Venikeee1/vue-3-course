@@ -1,13 +1,16 @@
 <script setup>
-import ApplicationDescription from './components/ApplicationDescription.vue';
-import StaticMapImage from './components/StaticMapImage.vue';
+// import ApplicationDescription from './components/ApplicationDescription.vue';
+// import StaticMapImage from './components/StaticMapImage.vue';
+import MapSideBar from './components/MapSideBar.vue';
 </script>
 
 <template>
-  <section class="content">
+  <!-- <section class="content">
     <ApplicationDescription />
     <StaticMapImage />
-  </section>
+  </section> -->
+
+  <MapSideBar />
 </template>
 
 <style scoped>
