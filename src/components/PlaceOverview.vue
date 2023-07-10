@@ -2,20 +2,29 @@
 import IconButton from './IconButton.vue';
 import IconDelete from '../assets/trash.svg';
 import IconEdit from '../assets/edit.svg';
+
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  imgUrl: {
+    type: String,
+    default: 'https://ukr-prokat.com/wp-content/uploads/2020/07/lviv.jpg',
+  },
+});
 </script>
 
 <template>
   <div class="place">
-    <img
-      class="image"
-      width="76"
-      height="76"
-      src="https://ukr-prokat.com/wp-content/uploads/2020/07/lviv.jpg"
-      alt=""
-    />
+    <img class="image" width="76" height="76" :src="props.imgUrl" alt="" />
     <div class="overview">
       <div class="title-wrapper">
-        <h2 class="title">Place title</h2>
+        <h2 class="title">{{ props.title }}</h2>
         <div class="title-actions">
           <IconButton>
             <IconEdit />
@@ -25,7 +34,7 @@ import IconEdit from '../assets/edit.svg';
           </IconButton>
         </div>
       </div>
-      <p class="description">Place description</p>
+      <p class="description">{{ props.description }}</p>
     </div>
   </div>
 </template>

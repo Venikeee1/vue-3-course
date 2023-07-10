@@ -1,16 +1,33 @@
 <script setup>
 import IButton from './IButton.vue';
 import PlaceOverview from './PlaceOverview.vue';
+import { computed, ref } from 'vue';
 
 const places = [
-  { title: 'Kyiv', description: 'Lovely place' },
-  { title: 'Lviv', description: 'What a nice place' },
+  { id: '1', title: 'Kyiv', description: 'Lovely place' },
+  { id: '2', title: 'Lviv', description: 'What a nice place' },
 ];
+const selectedPlaceId = ref(null);
+
+const selectedPlace = computed(() => {
+  return places.find((place) => place.id === selectedPlaceId.value);
+});
+
+const changeSelectedPlace = (id) => {
+  selectedPlaceId.value = id;
+};
 </script>
 
 <template>
   <div class="title">Додані маркери</div>
-  <PlaceOverview v-for="{ title, description } in places" :key="title" />
+  <div v-if="selectedPlace">Вибране місце: {{ selectedPlace.title }}</div>
+  <PlaceOverview
+    v-for="{ title, description, id } in places"
+    :key="id"
+    :title="title"
+    :description="description"
+    @click="changeSelectedPlace(id)"
+  />
   <IButton>Додати маркер</IButton>
 </template>
 
